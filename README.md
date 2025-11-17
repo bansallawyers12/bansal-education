@@ -39,6 +39,10 @@ A modern, professional website for Bansal Education Group - an educational insti
 - FAQ section
 - Social media links
 
+## Laravel Framework
+
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+
 ## Technology Stack
 
 - **Backend**: Laravel 12
