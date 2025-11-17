@@ -142,6 +142,365 @@
     </div>
 </section>
 
+<!-- Popular Courses Section -->
+<section class="py-20 bg-gradient-to-b from-blue-50 via-white to-yellow-50 relative z-20 overflow-hidden">
+    <!-- Decorative Background Elements -->
+    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+    <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+    <div class="absolute -bottom-8 left-1/2 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-16">
+            <div class="inline-block mb-4">
+                <span class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">
+                    🎓 Explore Opportunities
+                </span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Popular 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500">
+                    Australian Courses
+                </span>
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Explore some of the most sought-after courses in Australia. From Business to IT, Engineering to Healthcare - find your perfect pathway to success.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Course 1: Business & Management -->
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-t-4 border-blue-900">
+                <div class="relative h-48 bg-gradient-to-br from-blue-900 to-yellow-500 p-6 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-white rounded-full opacity-10 blur-3xl transform translate-x-12 -translate-y-12 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">Business & Management</h3>
+                        <p class="text-white/90 text-sm font-medium">Leadership & Corporate Careers</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-white">
+                    <ul class="space-y-3 mb-5">
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>MBA & Commerce</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Project Management</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Marketing & HR</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-xl p-4 border-l-4 border-yellow-500 shadow-sm">
+                        <p class="text-sm text-gray-700">
+                            <span class="font-bold text-blue-900">High Demand</span> - Excellent career prospects
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2: IT & Computer Science -->
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-2 border-yellow-500">
+                <div class="relative bg-gradient-to-br from-yellow-50 to-blue-50 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500">IT & Computer Science</span>
+                            </h3>
+                            <p class="text-gray-600 text-sm font-medium">Tech Innovation & Future Skills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-white">
+                    <ul class="space-y-3 mb-5">
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Software Engineering</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Cyber Security</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Data Science & AI</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gradient-to-r from-yellow-50 to-blue-50 rounded-xl p-4 border-l-4 border-blue-900 shadow-sm">
+                        <p class="text-sm text-gray-700">
+                            <span class="font-bold text-yellow-600">Fast Growing</span> - Strong migration prospects
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3: Engineering -->
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-t-4 border-blue-900">
+                <div class="relative h-48 bg-gradient-to-br from-blue-900 to-yellow-500 p-6 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-white rounded-full opacity-10 blur-3xl transform translate-x-12 -translate-y-12 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">Engineering</h3>
+                        <p class="text-white/90 text-sm font-medium">Innovation & Infrastructure</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-white">
+                    <ul class="space-y-3 mb-5">
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Civil & Mechanical</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Electrical Engineering</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Environmental & Telecom</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-xl p-4 border-l-4 border-yellow-500 shadow-sm">
+                        <p class="text-sm text-gray-700">
+                            <span class="font-bold text-blue-900">Top Rated</span> - Global recognition
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4: Healthcare -->
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-2 border-yellow-500">
+                <div class="relative bg-gradient-to-br from-yellow-50 to-blue-50 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500">Healthcare</span>
+                            </h3>
+                            <p class="text-gray-600 text-sm font-medium">Nursing & Allied Health</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-white">
+                    <ul class="space-y-3 mb-5">
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Nursing</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Aged & Disability Care</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Public Health</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gradient-to-r from-yellow-50 to-blue-50 rounded-xl p-4 border-l-4 border-blue-900 shadow-sm">
+                        <p class="text-sm text-gray-700">
+                            <span class="font-bold text-yellow-600">In Demand</span> - Excellent job security
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 5: Hospitality -->
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-t-4 border-blue-900">
+                <div class="relative h-48 bg-gradient-to-br from-blue-900 to-yellow-500 p-6 overflow-hidden">
+                    <div class="absolute top-0 right-0 w-40 h-40 bg-white rounded-full opacity-10 blur-3xl transform translate-x-12 -translate-y-12 group-hover:scale-150 transition-transform duration-700"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">Hospitality</h3>
+                        <p class="text-white/90 text-sm font-medium">Tourism & Culinary Arts</p>
+                    </div>
+                </div>
+                <div class="p-6 bg-white">
+                    <ul class="space-y-3 mb-5">
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Commercial Cookery</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Hotel Management</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Tourism & Events</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gradient-to-r from-blue-50 to-yellow-50 rounded-xl p-4 border-l-4 border-yellow-500 shadow-sm">
+                        <p class="text-sm text-gray-700">
+                            <span class="font-bold text-blue-900">Practical</span> - Hands-on training
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 6: Trade Courses -->
+            <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-2 border-yellow-500">
+                <div class="relative bg-gradient-to-br from-yellow-50 to-blue-50 p-6">
+                    <div class="flex items-start gap-4 mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500">Trade Courses</span>
+                            </h3>
+                            <p class="text-gray-600 text-sm font-medium">Hands-on Skills & PR Pathways</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-white">
+                    <ul class="space-y-3 mb-5">
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Carpentry & Construction</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Plumbing & Electrical</span>
+                        </li>
+                        <li class="flex items-center text-gray-700 group-hover:text-blue-900 transition-colors font-medium">
+                            <div class="w-6 h-6 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <span>Automotive & Fabrication</span>
+                        </li>
+                    </ul>
+                    <div class="bg-gradient-to-r from-yellow-50 to-blue-50 rounded-xl p-4 border-l-4 border-blue-900 shadow-sm">
+                        <p class="text-sm text-gray-700">
+                            <span class="font-bold text-yellow-600">PR Ready</span> - Strong migration pathways
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="{{ route('courses') }}" class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-900 to-yellow-500 text-white px-10 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-2xl hover:from-yellow-500 hover:to-blue-900 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1">
+                View All Courses
+                <svg class="w-6 h-6 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    
+    <style>
+        @keyframes blob {
+            0%, 100% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+    </style>
+</section>
+
 <!-- About Us Section -->
 <section class="py-20 bg-gray-50 relative z-25">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
