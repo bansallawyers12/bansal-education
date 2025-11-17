@@ -1,342 +1,268 @@
 @extends('layouts.app')
 
-@section('title', 'Bansal Education Group - Excellence in Education')
-@section('description', 'Leading educational institution providing quality education and comprehensive learning programs for students of all ages.')
+@section('title', "Home - Bansal Education Group")
+@section('description', "Australia's most trusted education consultant. Expert guidance for university admissions, course selection, and career planning in Australia's top universities.")
 
 @section('content')
-<!-- Hero Section -->
-<section class="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-20 lg:py-32">
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-20 lg:py-32 z-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="text-center lg:text-left">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                    Excellence in 
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                        Education
+            <div class="text-center lg:text-left fade-in slide-in-left">
+                <div class="mb-4 animate-float">
+                    <span class="inline-block bg-yellow-500 text-blue-900 text-sm font-semibold px-4 py-2 rounded-full pulse-slow animate-bounce-slow">
+                        🇦🇺 Australia's Most Trusted Education Consultant
+                    </span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight animate-fade-in-up">
+                    Your Pathway to 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500 animate-gradient-text">
+                        Quality Education
                     </span>
                 </h1>
-                <p class="mt-6 text-xl text-gray-600 leading-relaxed">
-                    Empowering students with quality education, innovative learning methods, and comprehensive programs 
-                    that prepare them for a successful future in an ever-changing world.
+                <p class="mt-6 text-xl text-gray-600 leading-relaxed animate-fade-in-up-delay">
+                    Expert guidance for university admissions, course selection, and career planning in Australia's top universities. 
+                    Join thousands of successful students who achieved their dreams with our proven consultancy services.
                 </p>
                 <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="{{ route('courses') }}" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                        Explore Courses
-                    </a>
-                    <a href="{{ route('about') }}" class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-200">
-                        Learn More
-                    </a>
+                        <a href="{{ route('contact') }}" class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-yellow-500 hover:to-blue-900 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 bounce-hover">
+                            Book Free Consultation
+                        </a>
+                        <a href="{{ route('about') }}" class="border-2 border-blue-900 text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-900 hover:text-white transition-all duration-200 bounce-hover">
+                            Learn More
+                        </a>
+                </div>
+                <!-- Trust Badges -->
+                <div class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-6 stagger-animation">
+                    <div class="text-center animate-scale-in hover:scale-110 transition-transform duration-300">
+                        <div class="text-2xl font-bold text-blue-900 counter-animate">10+</div>
+                        <div class="text-sm text-gray-600">Years Experience</div>
+                    </div>
+                    <div class="text-center animate-scale-in-delay hover:scale-110 transition-transform duration-300">
+                        <div class="text-2xl font-bold text-blue-900 counter-animate">10,000+</div>
+                        <div class="text-sm text-gray-600">Students Placed</div>
+                    </div>
+                    <div class="text-center animate-scale-in-delay-2 hover:scale-110 transition-transform duration-300">
+                        <div class="text-2xl font-bold text-blue-900 counter-animate">95%</div>
+                        <div class="text-sm text-gray-600">Success Rate</div>
+                    </div>
                 </div>
             </div>
-            <div class="relative">
-                <div class="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+            <div class="relative slide-in z-10 animate-float-slow">
+                <div class="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 relative z-20 animate-card-float">
                     <div class="text-center">
-                        <div class="w-20 h-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 pulse-slow animate-spin-slow hover:animate-spin">
+                            <svg class="w-10 h-10 text-white animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Quality Education</h3>
-                        <p class="text-gray-600">Comprehensive learning programs designed to nurture young minds and prepare them for success.</p>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4 animate-fade-in">Trusted by Students</h3>
+                        <p class="text-gray-600 animate-fade-in-delay">Proven track record of successful university placements in Australia's top institutions.</p>
+                        <div class="mt-4 flex justify-center space-x-4">
+                            <div class="text-center animate-bounce-slow hover:scale-110 transition-transform">
+                            <div class="text-lg font-bold text-yellow-500 counter-animate">100+</div>
+                            <div class="text-xs text-gray-500">Partner Universities</div>
+                        </div>
+                        <div class="text-center animate-bounce-slow-delay hover:scale-110 transition-transform">
+                            <div class="text-lg font-bold text-yellow-500">Free</div>
+                            <div class="text-xs text-gray-500">Consultation</div>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Decorative elements -->
-                <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20"></div>
-                <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-pink-400 rounded-full opacity-20"></div>
+                <div class="absolute -top-2 -right-2 w-20 h-20 bg-yellow-500 rounded-full opacity-15 pulse-slow z-0 animate-float"></div>
+                <div class="absolute -bottom-2 -left-2 w-28 h-28 bg-blue-900 rounded-full opacity-15 pulse-slow z-0 animate-float-reverse"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Features Section -->
-<section class="py-20 bg-white">
+    <!-- Services Preview Section -->
+    <section class="py-20 bg-white relative z-20 mt-0">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why Choose Bansal Education Group?
+        <div class="text-center mb-16 animate-fade-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 animate-slide-in-bottom">
+                Our Student Services
             </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                We are committed to providing exceptional educational experiences that inspire, 
-                challenge, and prepare students for lifelong success.
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-delay">
+                Comprehensive support services designed to guide you through every step of your educational journey in Australia.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Feature 1 -->
-            <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-animation">
+            <!-- Service 1 -->
+            <div class="bg-gradient-to-br from-blue-900 to-yellow-500 p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border border-yellow-200 fade-in animate-card-hover group">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
+                    <svg class="w-8 h-8 text-blue-900 group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">Expert Faculty</h3>
-                <p class="text-gray-600">
-                    Learn from experienced educators who are passionate about teaching and committed to student success.
-                </p>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                    </svg>
+                <h3 class="text-2xl font-bold text-white mb-4 group-hover:scale-110 transition-transform duration-300">Education Counselling</h3>
+                <p class="text-white mb-6 group-hover:text-yellow-100 transition-colors duration-300">University selection guidance, course recommendations, and application assistance.</p>
+                <div class="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:bg-yellow-500 group-hover:text-white transition-all duration-300">
+                    Complete guidance in 2-4 weeks
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">Innovative Methods</h3>
-                <p class="text-gray-600">
-                    Cutting-edge teaching methodologies and technology integration for enhanced learning experiences.
-                </p>
             </div>
 
-            <!-- Feature 3 -->
-            <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                <div class="w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">Community Focus</h3>
-                <p class="text-gray-600">
-                    Building a supportive learning community where students can grow, collaborate, and thrive together.
-                </p>
-            </div>
-
-            <!-- Feature 4 -->
-            <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
-                </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">Fast Track Learning</h3>
-                <p class="text-gray-600">
-                    Accelerated learning programs designed to help students achieve their goals efficiently and effectively.
-                </p>
-            </div>
-
-            <!-- Feature 5 -->
-            <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                <div class="w-16 h-16 bg-gradient-to-r from-red-600 to-red-700 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- Service 2 -->
+            <div class="bg-white p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border-2 border-yellow-500 fade-in animate-card-hover group">
+                <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
+                    <svg class="w-8 h-8 text-white group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">Proven Results</h3>
-                <p class="text-gray-600">
-                    Track record of student success with high achievement rates and positive learning outcomes.
-                </p>
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 group-hover:scale-110 transition-all duration-300">Admission Support</h3>
+                <p class="text-gray-600 mb-6 group-hover:text-gray-700 transition-colors duration-300">Document preparation, SOP writing, and interview preparation.</p>
+                <div class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:from-yellow-500 group-hover:to-blue-900 transition-all duration-300">
+                    Application process in 3-6 weeks
+                </div>
             </div>
 
-            <!-- Feature 6 -->
-            <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow duration-300">
-                <div class="w-16 h-16 bg-gradient-to-r from-indigo-600 to-indigo-700 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            <!-- Service 3 -->
+            <div class="bg-gradient-to-br from-yellow-500 to-blue-900 p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border border-blue-200 fade-in animate-card-hover group">
+                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
+                    <svg class="w-8 h-8 text-blue-900 group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                     </svg>
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">Flexible Schedules</h3>
-                <p class="text-gray-600">
-                    Convenient class timings and flexible learning options to accommodate diverse student needs.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Statistics Section -->
-<section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
-                Our Impact in Numbers
-            </h2>
-            <p class="text-xl text-blue-100">
-                Building futures, one student at a time
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="text-center">
-                <div class="text-4xl md:text-5xl font-bold text-white mb-2">5000+</div>
-                <div class="text-blue-100 text-lg">Students Taught</div>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl md:text-5xl font-bold text-white mb-2">95%</div>
-                <div class="text-blue-100 text-lg">Success Rate</div>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl md:text-5xl font-bold text-white mb-2">10+</div>
-                <div class="text-blue-100 text-lg">Years Experience</div>
-            </div>
-            <div class="text-center">
-                <div class="text-4xl md:text-5xl font-bold text-white mb-2">50+</div>
-                <div class="text-blue-100 text-lg">Expert Teachers</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Courses Preview Section -->
-<section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Popular Courses
-            </h2>
-            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                Discover our comprehensive range of courses designed to meet diverse learning needs and career aspirations.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Course 1 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                    <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                    </svg>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Science & Technology</h3>
-                    <p class="text-gray-600 mb-4">
-                        Comprehensive programs covering physics, chemistry, biology, and computer science with hands-on laboratory experience.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-blue-600 font-semibold">6 Months</span>
-                        <a href="{{ route('courses') }}" class="text-blue-600 hover:text-blue-700 font-medium">Learn More →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Course 2 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
-                    <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-                    </svg>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Mathematics</h3>
-                    <p class="text-gray-600 mb-4">
-                        Advanced mathematical concepts, problem-solving techniques, and analytical thinking development.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-purple-600 font-semibold">4 Months</span>
-                        <a href="{{ route('courses') }}" class="text-purple-600 hover:text-purple-700 font-medium">Learn More →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Course 3 -->
-            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
-                    <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                    </svg>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Language Arts</h3>
-                    <p class="text-gray-600 mb-4">
-                        Comprehensive language development, literature analysis, and communication skills enhancement.
-                    </p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-green-600 font-semibold">3 Months</span>
-                        <a href="{{ route('courses') }}" class="text-green-600 hover:text-green-700 font-medium">Learn More →</a>
-                    </div>
+                <h3 class="text-2xl font-bold text-white mb-4 group-hover:scale-110 transition-transform duration-300">Career Guidance</h3>
+                <p class="text-white mb-6 group-hover:text-yellow-100 transition-colors duration-300">Industry-focused course selection, job market analysis, and skill development.</p>
+                <div class="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:bg-yellow-500 group-hover:text-white transition-all duration-300">
+                    Career support throughout your journey
                 </div>
             </div>
         </div>
-
-        <div class="text-center mt-12">
-            <a href="{{ route('courses') }}" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl">
-                View All Courses
+        
+        <div class="text-center mt-12 animate-fade-in-up">
+            <a href="/services.php" class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-yellow-500 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 transform hover:-translate-y-2 animate-pulse-slow">
+                View All Services
             </a>
         </div>
     </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="py-20 bg-white">
+<!-- About Us Section -->
+<section class="py-20 bg-gray-50 relative z-25">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                What Our Students Say
-            </h2>
-            <p class="text-xl text-gray-600">
-                Hear from our successful students about their learning journey
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Testimonial 1 -->
-            <div class="bg-gray-50 p-8 rounded-xl">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">A</span>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="animate-fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 animate-slide-in-left">
+                    About 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500 animate-gradient-text">
+                        Bansal Education Group
+                    </span>
+                </h2>
+                <div class="space-y-5 text-base md:text-lg text-gray-700 leading-relaxed">
+                    <div class="bg-gradient-to-r from-blue-50 to-yellow-50 p-5 rounded-xl border-l-4 border-blue-900 animate-fade-in-up-delay">
+                        <p>
+                            Founded in <span class="font-bold text-blue-900">2018</span>, <span class="font-semibold text-blue-900">Bansal Education Group</span> provides <span class="font-semibold text-yellow-600">professional guidance and comprehensive support</span> in education and migration to Australia. Our team of qualified and experienced consultants delivers reliable advice and tailored solutions to meet the diverse needs of our clients.
+                        </p>
                     </div>
-                    <div class="ml-4">
-                        <h4 class="font-semibold text-gray-900">Aisha Patel</h4>
-                        <p class="text-gray-600 text-sm">Science Graduate</p>
+                    
+                    <div class="relative pl-5 border-l-4 border-yellow-500 animate-fade-in-up-delay">
+                        <p>
+                            Since our inception, we have consistently enrolled <span class="font-bold text-yellow-600">1,000+ students every year</span>, reflecting our strong outcomes, trusted processes, and client-first approach. The majority of our clients come from <span class="font-semibold text-blue-900">Asia and Southeast Asia</span>, giving us deep regional expertise and cultural understanding that enhances our advisory quality and student experience.
+                        </p>
                     </div>
+                    
+                    <div class="bg-gradient-to-r from-blue-900 to-yellow-500 p-5 rounded-xl text-white shadow-lg animate-fade-in-up-delay">
+                        <p>
+                            With a strong focus on <span class="font-bold">integrity, professionalism, and client satisfaction</span>, we have built a solid reputation and set industry benchmarks over the years. Through a collaborative approach, we ensure each client receives the best possible opportunities via carefully customized pathways.
+                        </p>
+                    </div>
+                    
+                    <p class="text-center italic text-gray-600 font-medium animate-fade-in-up-delay">
+                        At Bansal Education Group, we are committed to <span class="font-semibold text-blue-900">excellence, continuous improvement, and building long-term relationships</span> with our clients.
+                    </p>
                 </div>
-                <p class="text-gray-700 italic">
-                    "The quality of education at Bansal Education Group is exceptional. The teachers are knowledgeable and supportive, and the learning environment is perfect for academic growth."
-                </p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4 animate-slide-in-bottom">
+                    <a href="{{ route('about') }}" class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:from-yellow-500 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-110 transform animate-pulse-slow">
+                        Learn More About Us
+                    </a>
+                    <a href="{{ route('contact') }}" class="border-2 border-blue-900 text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-900 hover:text-white transition-all duration-300 hover:scale-110 transform hover:shadow-xl">
+                        Get in Touch
+                    </a>
+                </div>
             </div>
-
-            <!-- Testimonial 2 -->
-            <div class="bg-gray-50 p-8 rounded-xl">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-gradient-to-r from-green-600 to-blue-600 rounded-full flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">R</span>
+            <div class="relative animate-fade-in-up">
+                <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 shadow-2xl border-2 border-yellow-200 relative z-10 animate-card-float">
+                    <div class="text-center mb-8">
+                        <div class="w-24 h-24 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-slow hover:rotate-360 transition-transform duration-500">
+                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Our Impact</h3>
+                        <p class="text-gray-600">Making a difference in students' lives</p>
                     </div>
-                    <div class="ml-4">
-                        <h4 class="font-semibold text-gray-900">Rajesh Kumar</h4>
-                        <p class="text-gray-600 text-sm">Mathematics Student</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 animate-scale-in group">
+                            <div class="text-3xl font-bold text-blue-900 mb-2 counter-animate group-hover:scale-125 transition-transform">10+</div>
+                            <div class="text-xs text-gray-600 font-semibold">Years of Excellence</div>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 animate-scale-in-delay group">
+                            <div class="text-3xl font-bold text-yellow-600 mb-2 counter-animate group-hover:scale-125 transition-transform">10,000+</div>
+                            <div class="text-xs text-gray-600 font-semibold">Students Helped</div>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 animate-scale-in-delay-2 group">
+                            <div class="text-3xl font-bold text-blue-900 mb-2 counter-animate group-hover:scale-125 transition-transform">95%</div>
+                            <div class="text-xs text-gray-600 font-semibold">Success Rate</div>
+                        </div>
+                        <div class="text-center p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 animate-scale-in-delay-2 group">
+                            <div class="text-3xl font-bold text-yellow-600 mb-2 counter-animate group-hover:scale-125 transition-transform">100+</div>
+                            <div class="text-xs text-gray-600 font-semibold">Partner Universities</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-4 border-t-2 border-yellow-200">
+                        <div class="flex items-center justify-center space-x-2 text-gray-700 group">
+                            <svg class="w-5 h-5 text-yellow-600 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="font-semibold text-sm group-hover:text-blue-900 transition-colors">Trusted by Students Across Australia</span>
+                        </div>
                     </div>
                 </div>
-                <p class="text-gray-700 italic">
-                    "I've seen tremendous improvement in my mathematical skills. The teaching methods are innovative and the faculty is always ready to help with any doubts."
-                </p>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="bg-gray-50 p-8 rounded-xl">
-                <div class="flex items-center mb-4">
-                    <div class="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center">
-                        <span class="text-white font-semibold text-lg">S</span>
-                    </div>
-                    <div class="ml-4">
-                        <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
-                        <p class="text-gray-600 text-sm">Language Arts Student</p>
-                    </div>
-                </div>
-                <p class="text-gray-700 italic">
-                    "The language arts program has helped me develop strong communication skills. The personalized attention and modern teaching techniques make learning enjoyable."
-                </p>
+                <!-- Decorative elements -->
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-500 rounded-full opacity-15 blur-2xl animate-float z-0"></div>
+                <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-900 rounded-full opacity-15 blur-2xl animate-float-reverse z-0"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- CTA Section -->
-<section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
-    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Start Your Learning Journey?
-        </h2>
-        <p class="text-xl text-blue-100 mb-8">
-            Join thousands of successful students who have achieved their academic goals with our comprehensive educational programs.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('contact') }}" class="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl">
-                Get Started Today
-            </a>
-            <a href="{{ route('courses') }}" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200">
-                Browse Courses
-            </a>
+<!-- Why Choose Us Section -->
+<section class="py-20 bg-gradient-to-r from-blue-900 to-yellow-500 relative z-30 mt-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate-fade-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 animate-slide-in-bottom">
+                Why Choose Bansal Education Group?
+            </h2>
+            <p class="text-xl text-white animate-fade-in-delay">
+                Australia's most trusted education consultancy with proven results
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 stagger-animation">
+            <div class="text-center fade-in hover:scale-110 transition-transform duration-300 animate-float">
+                <div class="text-4xl md:text-5xl font-bold text-white mb-2 counter-animate animate-bounce-slow">10+</div>
+                <div class="text-white text-lg">Years of Educational Experience</div>
+            </div>
+            <div class="text-center fade-in hover:scale-110 transition-transform duration-300 animate-float-delay">
+                <div class="text-4xl md:text-5xl font-bold text-white mb-2 counter-animate animate-bounce-slow-delay">10,000+</div>
+                <div class="text-white text-lg">Students Placed Successfully</div>
+            </div>
+            <div class="text-center fade-in hover:scale-110 transition-transform duration-300 animate-float-delay-2">
+                <div class="text-4xl md:text-5xl font-bold text-white mb-2 counter-animate animate-bounce-slow-delay-2">95%</div>
+                <div class="text-white text-lg">University Admission Success Rate</div>
+            </div>
+            <div class="text-center fade-in hover:scale-110 transition-transform duration-300 animate-float-delay-3">
+                <div class="text-4xl md:text-5xl font-bold text-white mb-2 counter-animate animate-bounce-slow-delay-3">100+</div>
+                <div class="text-white text-lg">Partnerships with Australian Universities</div>
+            </div>
         </div>
     </div>
 </section>
 @endsection
-

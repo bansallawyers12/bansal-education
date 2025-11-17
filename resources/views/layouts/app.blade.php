@@ -68,8 +68,8 @@
                         <a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'text-navy border-b-2 border-gold' : 'text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold' }} px-3 py-2 text-sm font-medium transition-colors duration-200">Home</a>
                         <a href="{{ route('about') }}" class="{{ request()->routeIs('about') ? 'text-navy border-b-2 border-gold' : 'text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold' }} px-3 py-2 text-sm font-medium transition-colors duration-200">About Us</a>
                         <a href="{{ route('courses') }}" class="{{ request()->routeIs('courses') ? 'text-navy border-b-2 border-gold' : 'text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold' }} px-3 py-2 text-sm font-medium transition-colors duration-200">Courses</a>
-                        <a href="#" class="text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold px-3 py-2 text-sm font-medium transition-colors duration-200">Student Services</a>
-                        <a href="#" class="text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold px-3 py-2 text-sm font-medium transition-colors duration-200">Success Stories</a>
+                        <a href="/services.php" class="{{ request()->is('services*') ? 'text-navy border-b-2 border-gold' : 'text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold' }} px-3 py-2 text-sm font-medium transition-colors duration-200">Student Services</a>
+                        <a href="/testimonials.php" class="{{ request()->is('testimonials*') ? 'text-navy border-b-2 border-gold' : 'text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold' }} px-3 py-2 text-sm font-medium transition-colors duration-200">Success Stories</a>
                         <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'bg-gradient-to-r from-blue-900 to-yellow-500 text-white border-2 border-yellow-500' : 'bg-gradient-to-r from-blue-900 to-yellow-500 text-white hover:from-yellow-500 hover:to-blue-900 border-2 border-yellow-500 hover:border-blue-900' }} px-6 py-2.5 text-sm font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform">Contact Us</a>
                     </div>
                 </div>
@@ -194,17 +194,361 @@
         </div>
     </footer>
 
-    <!-- JavaScript for mobile menu -->
+    <!-- JavaScript -->
     <script>
+        // Mobile menu functionality
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuButton = document.querySelector('.mobile-menu-button');
             const mobileMenu = document.querySelector('.mobile-menu');
 
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                    // Add rotation animation to hamburger icon
+                    this.classList.toggle('rotate-90');
+                });
+            }
+
+            // Enhanced scroll effects
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('nav');
+                if (nav) {
+                    if (window.scrollY > 100) {
+                        nav.classList.add('shadow-xl', 'backdrop-blur-sm', 'bg-white/95');
+                    } else {
+                        nav.classList.remove('shadow-xl', 'backdrop-blur-sm', 'bg-white/95');
+                    }
+                }
+
+                // Fade in animation for elements
+                const elements = document.querySelectorAll('.fade-in');
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        element.classList.add('animate-fade-in');
+                    }
+                });
+
+                // Slide in animation for cards
+                const cards = document.querySelectorAll('.slide-in');
+                cards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    const cardVisible = 200;
+                    
+                    if (cardTop < window.innerHeight - cardVisible) {
+                        card.classList.add('animate-slide-in');
+                    }
+                });
+            });
+
+            // Counter animation for statistics
+            const counters = document.querySelectorAll('[class*="text-4xl"], [class*="text-5xl"], [class*="text-2xl"], [class*="text-3xl"]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const originalText = counter.textContent;
+                        const target = parseInt(originalText.replace(/\D/g, ''));
+                        
+                        // Only animate if we have a valid number
+                        if (!isNaN(target) && target > 0) {
+                            const hasPlus = originalText.includes('+');
+                            const hasPercent = originalText.includes('%');
+                            const increment = target / 100;
+                            let current = 0;
+                            
+                            const updateCounter = () => {
+                                if (current < target) {
+                                    current += increment;
+                                    counter.textContent = Math.ceil(current) + (hasPlus ? '+' : '') + (hasPercent ? '%' : '');
+                                    requestAnimationFrame(updateCounter);
+                                } else {
+                                    counter.textContent = target + (hasPlus ? '+' : '') + (hasPercent ? '%' : '');
+                                }
+                            };
+                            
+                            updateCounter();
+                        }
+                        observer.unobserve(counter);
+                    }
+                });
+            });
+            
+            counters.forEach(counter => {
+                observer.observe(counter);
             });
         });
     </script>
+
+    <!-- Additional CSS for animations -->
+    <style>
+        /* Fade in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Slide in animation */
+        .slide-in {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+
+        .animate-slide-in {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Pulse animation for important elements */
+        .pulse-slow {
+            animation: pulse 3s infinite;
+        }
+
+        /* Bounce animation for call-to-action buttons */
+        .bounce-hover:hover {
+            animation: bounce 0.6s ease;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Float animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .animate-float-slow {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .animate-float-reverse {
+            animation: float 3s ease-in-out infinite reverse;
+        }
+
+        .animate-float-delay {
+            animation: float 3s ease-in-out infinite;
+            animation-delay: 0.5s;
+        }
+
+        .animate-float-delay-2 {
+            animation: float 3s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+
+        .animate-float-delay-3 {
+            animation: float 3s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        /* Fade in up */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-fade-in-up-delay {
+            animation: fadeInUp 0.8s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+
+        /* Slide in from left */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .slide-in-left {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+
+        /* Slide in from bottom */
+        @keyframes slideInBottom {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-slide-in-bottom {
+            animation: slideInBottom 0.8s ease-out forwards;
+        }
+
+        /* Scale in */
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-scale-in {
+            animation: scaleIn 0.6s ease-out forwards;
+        }
+
+        .animate-scale-in-delay {
+            animation: scaleIn 0.6s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+
+        .animate-scale-in-delay-2 {
+            animation: scaleIn 0.6s ease-out 0.4s forwards;
+            opacity: 0;
+        }
+
+        /* Gradient text animation */
+        @keyframes gradientText {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .animate-gradient-text {
+            background-size: 200% 200%;
+            animation: gradientText 3s ease infinite;
+        }
+
+        /* Slow bounce */
+        @keyframes bounceSlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-bounce-slow {
+            animation: bounceSlow 2s ease-in-out infinite;
+        }
+
+        .animate-bounce-slow-delay {
+            animation: bounceSlow 2s ease-in-out 0.5s infinite;
+        }
+
+        .animate-bounce-slow-delay-2 {
+            animation: bounceSlow 2s ease-in-out 1s infinite;
+        }
+
+        .animate-bounce-slow-delay-3 {
+            animation: bounceSlow 2s ease-in-out 1.5s infinite;
+        }
+
+        /* Slow spin */
+        @keyframes spinSlow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .animate-spin-slow {
+            animation: spinSlow 8s linear infinite;
+        }
+
+        /* Card float */
+        @keyframes cardFloat {
+            0%, 100% { transform: translateY(0px) rotate(3deg); }
+            50% { transform: translateY(-10px) rotate(0deg); }
+        }
+
+        .animate-card-float {
+            animation: cardFloat 4s ease-in-out infinite;
+        }
+
+        /* Card hover animation */
+        @keyframes cardHover {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .animate-card-hover {
+            animation: cardHover 3s ease-in-out infinite;
+        }
+
+        /* Fade in with delay */
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .animate-fade-in-delay {
+            animation: fadeInUp 0.6s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+
+        /* Pulse slow */
+        @keyframes pulseSlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .animate-pulse-slow {
+            animation: pulseSlow 2s ease-in-out infinite;
+        }
+
+        /* Counter animation */
+        .counter-animate {
+            animation: scaleIn 0.8s ease-out forwards;
+        }
+
+        /* Staggered animation for cards */
+        .stagger-animation > * {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: staggerFadeIn 0.6s ease forwards;
+        }
+
+        .stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+        .stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+        .stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+        .stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes staggerFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </body>
 </html>
 
