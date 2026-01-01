@@ -51,11 +51,14 @@
             <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-l-4 border-blue-900 animate-fade-in-up group">
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <div class="flex-shrink-0">
-                        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                    </svg>
-                </div>
+                        <div class="w-40 h-40 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                            <div class="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-yellow-500 ring-offset-4 ring-offset-white group-hover:ring-blue-900 transition-all">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop" alt="Business & Management" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            </div>
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-4 ring-offset-white" style="display: none;">
+                                <span class="text-white text-4xl font-bold">BM</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex-1">
                         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors duration-300">Business & Management</h3>
@@ -108,11 +111,14 @@
             <div class="bg-gradient-to-br from-yellow-50 to-blue-50 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-l-4 border-yellow-500 animate-fade-in-up-delay group">
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <div class="flex-shrink-0">
-                        <div class="w-20 h-20 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                    </svg>
-                </div>
+                        <div class="w-40 h-40 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                            <div class="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-yellow-500 ring-offset-4 ring-offset-white group-hover:ring-blue-900 transition-all">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=400&fit=crop" alt="Information Technology" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            </div>
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-4 ring-offset-white" style="display: none;">
+                                <span class="text-white text-4xl font-bold">IT</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex-1">
                         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors duration-300">Information Technology (IT) & Computer Science</h3>
@@ -165,11 +171,14 @@
             <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-l-4 border-blue-900 animate-fade-in-up-delay group">
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <div class="flex-shrink-0">
-                        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                    </svg>
-                </div>
+                        <div class="w-40 h-40 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                            <div class="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-yellow-500 ring-offset-4 ring-offset-white group-hover:ring-blue-900 transition-all">
+                                <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=400&q=80" alt="Health & Allied Health" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            </div>
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-4 ring-offset-white" style="display: none;">
+                                <span class="text-white text-4xl font-bold">HA</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex-1">
                         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors duration-300">Health & Allied Health</h3>
@@ -222,11 +231,14 @@
             <div class="bg-gradient-to-br from-yellow-50 to-blue-50 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-l-4 border-yellow-500 animate-fade-in-up-delay group">
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <div class="flex-shrink-0">
-                        <div class="w-20 h-20 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                    </svg>
-                </div>
+                        <div class="w-40 h-40 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                            <div class="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-yellow-500 ring-offset-4 ring-offset-white group-hover:ring-blue-900 transition-all">
+                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=400&fit=crop" alt="Engineering" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            </div>
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-4 ring-offset-white" style="display: none;">
+                                <span class="text-white text-4xl font-bold">EN</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex-1">
                         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors duration-300">Engineering</h3>
@@ -279,11 +291,14 @@
             <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-l-4 border-blue-900 animate-fade-in-up-delay group">
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <div class="flex-shrink-0">
-                        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
-                    </svg>
-                </div>
+                        <div class="w-40 h-40 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                            <div class="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-yellow-500 ring-offset-4 ring-offset-white group-hover:ring-blue-900 transition-all">
+                                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=400&fit=crop" alt="Hospitality & Tourism" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            </div>
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-4 ring-offset-white" style="display: none;">
+                                <span class="text-white text-4xl font-bold">HT</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="flex-1">
                         <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors duration-300">Hospitality & Tourism</h3>
@@ -342,10 +357,13 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <!-- Trade 1: Automotive -->
             <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-t-4 border-blue-900 animate-fade-in-up group">
-                <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mb-4 hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
-                    </svg>
+                <div class="w-32 h-32 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-xl ring-4 ring-yellow-500 ring-offset-2 ring-offset-white group-hover:ring-blue-900 transition-all">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=400&fit=crop" alt="Automotive" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-2 ring-offset-white" style="display: none;">
+                        <span class="text-white text-3xl font-bold">AU</span>
+                    </div>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">Automotive</h3>
                 <ul class="space-y-2 text-gray-700">
@@ -372,10 +390,13 @@
 
             <!-- Trade 2: Carpentry & Construction -->
             <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-t-4 border-yellow-500 animate-fade-in-up-delay group">
-                <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center mb-4 hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                    </svg>
+                <div class="w-32 h-32 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-xl ring-4 ring-yellow-500 ring-offset-2 ring-offset-white group-hover:ring-blue-900 transition-all">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=400&fit=crop" alt="Carpentry & Construction" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-2 ring-offset-white" style="display: none;">
+                        <span class="text-white text-3xl font-bold">CC</span>
+                    </div>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">Carpentry & Construction</h3>
                 <ul class="space-y-2 text-gray-700">
@@ -408,10 +429,13 @@
 
             <!-- Trade 3: Plumbing -->
             <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-t-4 border-blue-900 animate-fade-in-up-delay group">
-                <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mb-4 hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                    </svg>
+                <div class="w-32 h-32 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-xl ring-4 ring-yellow-500 ring-offset-2 ring-offset-white group-hover:ring-blue-900 transition-all">
+                        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=400&h=400&fit=crop" alt="Plumbing" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-2 ring-offset-white" style="display: none;">
+                        <span class="text-white text-3xl font-bold">PL</span>
+                    </div>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">Plumbing</h3>
                 <ul class="space-y-2 text-gray-700">
@@ -438,10 +462,13 @@
 
             <!-- Trade 4: Electrical Trades -->
             <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-t-4 border-yellow-500 animate-fade-in-up-delay group">
-                <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center mb-4 hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
+                <div class="w-32 h-32 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-xl ring-4 ring-yellow-500 ring-offset-2 ring-offset-white group-hover:ring-blue-900 transition-all">
+                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=400&h=400&fit=crop" alt="Electrical Trades" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-2 ring-offset-white" style="display: none;">
+                        <span class="text-white text-3xl font-bold">EL</span>
+                    </div>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">Electrical Trades</h3>
                 <ul class="space-y-2 text-gray-700">
@@ -462,10 +489,13 @@
 
             <!-- Trade 5: Engineering Trades -->
             <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-t-4 border-blue-900 animate-fade-in-up-delay group">
-                <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mb-4 hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                    </svg>
+                <div class="w-32 h-32 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-xl ring-4 ring-yellow-500 ring-offset-2 ring-offset-white group-hover:ring-blue-900 transition-all">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=400&fit=crop" alt="Engineering Trades" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-2 ring-offset-white" style="display: none;">
+                        <span class="text-white text-3xl font-bold">ET</span>
+                    </div>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">Engineering Trades</h3>
                 <ul class="space-y-2 text-gray-700">
@@ -492,10 +522,13 @@
 
             <!-- Trade 6: Hair & Beauty -->
             <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 border-t-4 border-yellow-500 animate-fade-in-up-delay group">
-                <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center mb-4 hover:scale-125 hover:rotate-360 transition-all duration-700 group-hover:shadow-lg animate-pulse-slow">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
-                    </svg>
+                <div class="w-32 h-32 mx-auto mb-4 hover:scale-110 transition-transform duration-300 relative">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-xl ring-4 ring-yellow-500 ring-offset-2 ring-offset-white group-hover:ring-blue-900 transition-all">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=400&fit=crop" alt="Hair & Beauty" class="w-full h-full object-cover" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-2 ring-offset-white" style="display: none;">
+                        <span class="text-white text-3xl font-bold">HB</span>
+                    </div>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 transition-colors duration-300">Hair & Beauty</h3>
                 <ul class="space-y-2 text-gray-700">

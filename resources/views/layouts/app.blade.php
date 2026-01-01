@@ -106,6 +106,18 @@
         @yield('content')
     </main>
 
+    <!-- Floating Call Button -->
+    <a href="tel:0396021330" class="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 bg-gradient-to-r from-blue-900 to-yellow-500 text-white rounded-full p-3 md:p-4 shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 animate-bounce-slow group" aria-label="Call us now at 03 9602 1330">
+        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+        </svg>
+        <!-- Tooltip on hover -->
+        <span class="absolute right-full mr-3 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white text-sm font-semibold px-3 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none hidden md:block">
+            Call Now: 03 9602 1330
+            <span class="absolute left-full top-1/2 transform -translate-y-1/2 border-4 border-transparent border-l-gray-900"></span>
+        </span>
+    </a>
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -147,9 +159,9 @@
                     <ul class="space-y-2">
                         <li><a href="{{ route('about') }}" class="text-gray-300 hover:text-white transition-colors duration-200">About Us</a></li>
                         <li><a href="{{ route('courses') }}" class="text-gray-300 hover:text-white transition-colors duration-200">Our Courses</a></li>
+                        <li><a href="{{ route('services') }}" class="text-gray-300 hover:text-white transition-colors duration-200">Student Services</a></li>
                         <li><a href="{{ route('contact') }}" class="text-gray-300 hover:text-white transition-colors duration-200">Contact</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Admissions</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">News & Events</a></li>
+                        <li><a href="{{ route('testimonials') }}" class="text-gray-300 hover:text-white transition-colors duration-200">Success Stories</a></li>
                     </ul>
                 </div>
 
@@ -157,24 +169,24 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
                     <div class="space-y-2 text-gray-300">
-                        <p class="flex items-center">
-                            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <p class="flex items-start">
+                            <svg class="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
-                            123 Education Street, Learning City
+                            <span>Next to Flight Center<br>Level 8/278 Collins Street<br>Melbourne VIC 3000<br>Australia</span>
                         </p>
                         <p class="flex items-center">
-                            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="h-5 w-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                             </svg>
-                            +1 (555) 123-4567
+                            <a href="tel:0396021330" class="hover:text-white transition-colors">03 9602 1330</a>
                         </p>
                         <p class="flex items-center">
-                            <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="h-5 w-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                             </svg>
-                            Info@bansaleducation.com.au
+                            <a href="mailto:Info@bansaleducation.com.au" class="hover:text-white transition-colors break-all">Info@bansaleducation.com.au</a>
                         </p>
                     </div>
                 </div>

@@ -80,6 +80,21 @@
                             <span class="font-medium {{ request()->routeIs('admin.pages.*') ? 'text-white' : 'text-gray-200' }}">Pages</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="{{ route('admin.contact-requests.index') }}" class="flex items-center justify-between px-4 py-3 rounded-xl hover:bg-white/10 transition-all duration-200 {{ request()->routeIs('admin.contact-requests.*') ? 'bg-gradient-to-r from-gold/20 to-yellow-400/20 border-l-4 border-gold shadow-lg' : '' }} group">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-3 {{ request()->routeIs('admin.contact-requests.*') ? 'text-gold' : 'text-gray-300 group-hover:text-white' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <span class="font-medium {{ request()->routeIs('admin.contact-requests.*') ? 'text-white' : 'text-gray-200' }}">Contact Requests</span>
+                            </div>
+                            @if(isset($unreadContactRequestsCount) && $unreadContactRequestsCount > 0)
+                                <span class="ml-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white bg-red-600 rounded-full">
+                                    {{ $unreadContactRequestsCount }}
+                                </span>
+                            @endif
+                        </a>
+                    </li>
                 </ul>
             </nav>
 

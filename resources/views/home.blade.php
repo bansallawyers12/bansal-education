@@ -49,30 +49,50 @@
                 </div>
             </div>
             <div class="relative slide-in z-10 animate-float-slow">
-                <div class="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 relative z-20 animate-card-float">
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 pulse-slow animate-spin-slow hover:animate-spin">
-                            <svg class="w-10 h-10 text-white animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                            </svg>
+                <div class="relative">
+                    <!-- Beautiful Hero Image Card -->
+                    <div class="relative rounded-3xl shadow-2xl overflow-hidden transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 animate-card-float group">
+                        <!-- Main Beautiful Image -->
+                        <div class="relative h-[500px] overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop" 
+                                 alt="Happy students studying together" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                 style="filter: blur(1.5px);"
+                                 loading="eager"
+                                 onerror="this.onerror=null; this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800';">
+                            <!-- Subtle Gradient Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-yellow-500/20"></div>
                         </div>
-                        <h3 class="text-2xl font-bold text-blue-900 mb-4 animate-fade-in">Trusted by Students</h3>
-                        <p class="text-gray-600 animate-fade-in-delay">Proven track record of successful university placements in Australia's top institutions.</p>
-                        <div class="mt-4 flex justify-center space-x-4">
-                            <div class="text-center animate-bounce-slow hover:scale-110 transition-transform">
-                            <div class="text-lg font-bold text-yellow-500 counter-animate">100+</div>
-                            <div class="text-xs text-gray-500">Partner Universities</div>
+                    </div>
+                    
+                    <!-- Floating Trust Badge - Bigger -->
+                    <div class="absolute -bottom-8 -right-8 bg-white rounded-3xl shadow-2xl p-8 transform rotate-6 hover:rotate-0 transition-all duration-500 z-20 border-2 border-yellow-200 max-w-sm">
+                        <div class="flex items-center gap-4 mb-5">
+                            <div class="w-18 h-18 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 pulse-slow shadow-lg" style="width: 72px; height: 72px;">
+                                <svg class="w-9 h-9 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900">Trusted by Students</h3>
+                                <p class="text-sm text-gray-600">Proven track record</p>
+                            </div>
                         </div>
-                        <div class="text-center animate-bounce-slow-delay hover:scale-110 transition-transform">
-                            <div class="text-lg font-bold text-yellow-500">Free</div>
-                            <div class="text-xs text-gray-500">Consultation</div>
-                        </div>
+                        <div class="flex justify-between gap-6 pt-5 border-t border-gray-200">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-900 counter-animate">95%</div>
+                                <div class="text-sm text-gray-500">Success Rate</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-yellow-600">10K+</div>
+                                <div class="text-sm text-gray-500">Students</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Decorative elements -->
-                <div class="absolute -top-2 -right-2 w-20 h-20 bg-yellow-500 rounded-full opacity-15 pulse-slow z-0 animate-float"></div>
-                <div class="absolute -bottom-2 -left-2 w-28 h-28 bg-blue-900 rounded-full opacity-15 pulse-slow z-0 animate-float-reverse"></div>
+                <!-- Decorative floating elements -->
+                <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-400 rounded-full opacity-20 blur-2xl pulse-slow z-0 animate-float"></div>
+                <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-600 rounded-full opacity-20 blur-2xl pulse-slow z-0 animate-float-reverse"></div>
             </div>
         </div>
     </div>
@@ -92,44 +112,59 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-animation">
             <!-- Service 1 -->
-            <div class="bg-gradient-to-br from-blue-900 to-yellow-500 p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border border-yellow-200 fade-in animate-card-hover group">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
-                    <svg class="w-8 h-8 text-blue-900 group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                    </svg>
+            <div class="bg-gradient-to-br from-blue-900 to-yellow-500 p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border border-yellow-200 fade-in animate-card-hover group overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-32 h-32 opacity-10">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Education counselling" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none';">
                 </div>
-                <h3 class="text-2xl font-bold text-white mb-4 group-hover:scale-110 transition-transform duration-300">Education Counselling</h3>
-                <p class="text-white mb-6 group-hover:text-yellow-100 transition-colors duration-300">University selection guidance, course recommendations, and application assistance.</p>
-                <div class="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:bg-yellow-500 group-hover:text-white transition-all duration-300">
-                    Complete guidance in 2-4 weeks
+                <div class="relative z-10">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
+                        <svg class="w-8 h-8 text-blue-900 group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:scale-110 transition-transform duration-300">Education Counselling</h3>
+                    <p class="text-white mb-6 group-hover:text-yellow-100 transition-colors duration-300">University selection guidance, course recommendations, and application assistance.</p>
+                    <div class="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:bg-yellow-500 group-hover:text-white transition-all duration-300">
+                        Complete guidance in 2-4 weeks
+                    </div>
                 </div>
             </div>
 
             <!-- Service 2 -->
-            <div class="bg-white p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border-2 border-yellow-500 fade-in animate-card-hover group">
-                <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
-                    <svg class="w-8 h-8 text-white group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                    </svg>
+            <div class="bg-white p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border-2 border-yellow-500 fade-in animate-card-hover group overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-40 h-40 opacity-15">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=400&fit=crop" alt="Admission support" class="w-full h-full object-cover rounded-full" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=400&fit=crop';">
                 </div>
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 group-hover:scale-110 transition-all duration-300">Admission Support</h3>
-                <p class="text-gray-600 mb-6 group-hover:text-gray-700 transition-colors duration-300">Document preparation, SOP writing, and interview preparation.</p>
-                <div class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:from-yellow-500 group-hover:to-blue-900 transition-all duration-300">
-                    Application process in 3-6 weeks
+                <div class="relative z-10">
+                    <div class="w-16 h-16 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
+                        <svg class="w-8 h-8 text-white group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-900 group-hover:scale-110 transition-all duration-300">Admission Support</h3>
+                    <p class="text-gray-600 mb-6 group-hover:text-gray-700 transition-colors duration-300">Document preparation, SOP writing, and interview preparation.</p>
+                    <div class="bg-gradient-to-r from-blue-900 to-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:from-yellow-500 group-hover:to-blue-900 transition-all duration-300">
+                        Application process in 3-6 weeks
+                    </div>
                 </div>
             </div>
 
             <!-- Service 3 -->
-            <div class="bg-gradient-to-br from-yellow-500 to-blue-900 p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border border-blue-200 fade-in animate-card-hover group">
-                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
-                    <svg class="w-8 h-8 text-blue-900 group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                    </svg>
+            <div class="bg-gradient-to-br from-yellow-500 to-blue-900 p-8 rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-500 border border-blue-200 fade-in animate-card-hover group overflow-hidden relative">
+                <div class="absolute top-0 right-0 w-32 h-32 opacity-10">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Career guidance" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none';">
                 </div>
-                <h3 class="text-2xl font-bold text-white mb-4 group-hover:scale-110 transition-transform duration-300">Career Guidance</h3>
-                <p class="text-white mb-6 group-hover:text-yellow-100 transition-colors duration-300">Industry-focused course selection, job market analysis, and skill development.</p>
-                <div class="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:bg-yellow-500 group-hover:text-white transition-all duration-300">
-                    Career support throughout your journey
+                <div class="relative z-10">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 pulse-slow group-hover:rotate-360 transition-transform duration-700">
+                        <svg class="w-8 h-8 text-blue-900 group-hover:scale-125 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 group-hover:scale-110 transition-transform duration-300">Career Guidance</h3>
+                    <p class="text-white mb-6 group-hover:text-yellow-100 transition-colors duration-300">Industry-focused course selection, job market analysis, and skill development.</p>
+                    <div class="bg-white text-blue-900 px-4 py-2 rounded-lg text-sm font-semibold text-center group-hover:bg-yellow-500 group-hover:text-white transition-all duration-300">
+                        Career support throughout your journey
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,9 +205,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <!-- Course 1: Business & Management -->
             <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-t-4 border-blue-900">
-                <div class="relative h-48 bg-gradient-to-br from-blue-900 to-yellow-500 p-6 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-40 h-40 bg-white rounded-full opacity-10 blur-3xl transform translate-x-12 -translate-y-12 group-hover:scale-150 transition-transform duration-700"></div>
-                    <div class="relative z-10">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Business & Management" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/60 to-blue-900/40"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
                         <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
@@ -219,18 +255,20 @@
 
             <!-- Course 2: IT & Computer Science -->
             <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-2 border-yellow-500">
-                <div class="relative bg-gradient-to-br from-yellow-50 to-blue-50 p-6">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="IT & Computer Science" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-yellow-500/90 via-yellow-500/60 to-yellow-500/40"></div>
+                    <div class="absolute inset-0 p-6 flex items-start gap-4">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
                             </svg>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">
-                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500">IT & Computer Science</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">
+                                IT & Computer Science
                             </h3>
-                            <p class="text-gray-600 text-sm font-medium">Tech Innovation & Future Skills</p>
+                            <p class="text-white/90 text-sm font-medium">Tech Innovation & Future Skills</p>
                         </div>
                     </div>
                 </div>
@@ -271,9 +309,10 @@
 
             <!-- Course 3: Engineering -->
             <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-t-4 border-blue-900">
-                <div class="relative h-48 bg-gradient-to-br from-blue-900 to-yellow-500 p-6 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-40 h-40 bg-white rounded-full opacity-10 blur-3xl transform translate-x-12 -translate-y-12 group-hover:scale-150 transition-transform duration-700"></div>
-                    <div class="relative z-10">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" alt="Engineering" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/60 to-blue-900/40"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
                         <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
@@ -320,18 +359,20 @@
 
             <!-- Course 4: Healthcare -->
             <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-2 border-yellow-500">
-                <div class="relative bg-gradient-to-br from-yellow-50 to-blue-50 p-6">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop" alt="Healthcare" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop';">
+                    <div class="absolute inset-0 bg-gradient-to-t from-yellow-500/90 via-yellow-500/60 to-yellow-500/40"></div>
+                    <div class="absolute inset-0 p-6 flex items-start gap-4">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                             </svg>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">
-                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500">Healthcare</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">
+                                Healthcare
                             </h3>
-                            <p class="text-gray-600 text-sm font-medium">Nursing & Allied Health</p>
+                            <p class="text-white/90 text-sm font-medium">Nursing & Allied Health</p>
                         </div>
                     </div>
                 </div>
@@ -372,9 +413,10 @@
 
             <!-- Course 5: Hospitality -->
             <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-t-4 border-blue-900">
-                <div class="relative h-48 bg-gradient-to-br from-blue-900 to-yellow-500 p-6 overflow-hidden">
-                    <div class="absolute top-0 right-0 w-40 h-40 bg-white rounded-full opacity-10 blur-3xl transform translate-x-12 -translate-y-12 group-hover:scale-150 transition-transform duration-700"></div>
-                    <div class="relative z-10">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Hospitality" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/60 to-blue-900/40"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
                         <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mb-4 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
@@ -421,19 +463,21 @@
 
             <!-- Course 6: Trade Courses -->
             <div class="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden group transform hover:-translate-y-2 border-2 border-yellow-500">
-                <div class="relative bg-gradient-to-br from-yellow-50 to-blue-50 p-6">
-                    <div class="flex items-start gap-4 mb-4">
-                        <div class="w-16 h-16 bg-gradient-to-r from-yellow-500 to-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
+                <div class="relative h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" alt="Trade Courses" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-yellow-500/90 via-yellow-500/60 to-yellow-500/40"></div>
+                    <div class="absolute inset-0 p-6 flex items-start gap-4">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center flex-shrink-0 group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
                             <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
                         </div>
                         <div class="flex-1">
-                            <h3 class="text-2xl font-bold text-gray-900 mb-2">
-                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-yellow-500">Trade Courses</span>
+                            <h3 class="text-2xl font-bold text-white mb-2">
+                                Trade Courses
                             </h3>
-                            <p class="text-gray-600 text-sm font-medium">Hands-on Skills & PR Pathways</p>
+                            <p class="text-white/90 text-sm font-medium">Hands-on Skills & PR Pathways</p>
                         </div>
                     </div>
                 </div>
@@ -545,16 +589,18 @@
                 </div>
             </div>
             <div class="relative animate-fade-in-up">
-                <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 shadow-2xl border-2 border-yellow-200 relative z-10 animate-card-float">
-                    <div class="text-center mb-8">
-                        <div class="w-24 h-24 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-slow hover:rotate-360 transition-transform duration-500">
-                            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Our Impact</h3>
-                        <p class="text-gray-600">Making a difference in students' lives</p>
+                <div class="bg-gradient-to-br from-blue-50 to-yellow-50 rounded-2xl p-8 shadow-2xl border-2 border-yellow-200 relative z-10 animate-card-float overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 opacity-5">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Students" class="w-full h-full object-cover rounded-full" onerror="this.style.display='none';">
                     </div>
+                    <div class="relative z-10">
+                        <div class="text-center mb-8">
+                            <div class="w-24 h-24 bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse-slow hover:rotate-360 transition-transform duration-500 overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Team" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='<svg class=\\'w-12 h-12 text-blue-900\\' fill=\\'none\\' stroke=\\'currentColor\\' viewBox=\\'0 0 24 24\\'><path stroke-linecap=\\'round\\' stroke-linejoin=\\'round\\' stroke-width=\\'2\\' d=\\'M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z\\'/></svg>';">
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Our Impact</h3>
+                            <p class="text-gray-600">Making a difference in students' lives</p>
+                        </div>
                     
                     <div class="grid grid-cols-2 gap-4">
                         <div class="text-center p-4 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 animate-scale-in group">
@@ -583,6 +629,7 @@
                             <span class="font-semibold text-sm group-hover:text-blue-900 transition-colors">Trusted by Students Across Australia</span>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <!-- Decorative elements -->
                 <div class="absolute -top-4 -right-4 w-24 h-24 bg-yellow-500 rounded-full opacity-15 blur-2xl animate-float z-0"></div>
@@ -593,7 +640,7 @@
 </section>
 
 <!-- Why Choose Us Section -->
-<section class="py-20 bg-gradient-to-r from-blue-900 to-yellow-500 relative z-30 mt-0">
+<section class="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-yellow-500 relative z-30 mt-0">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 animate-fade-in-up">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 animate-slide-in-bottom">

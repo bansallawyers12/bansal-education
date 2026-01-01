@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\ContactRequestController;
 
 // Public Routes
 Route::get('/', function () {
@@ -18,9 +19,8 @@ Route::get('/courses', function () {
     return view('courses');
 })->name('courses');
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+Route::get('/contact', [\App\Http\Controllers\ContactController::class, 'show'])->name('contact');
+Route::post('/contact', [\App\Http\Controllers\ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/services', function () {
     return view('services');
@@ -44,6 +44,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
         // Pages management routes
         Route::get('/pages/{page}/preview', [PageController::class, 'preview'])->name('pages.preview');
         Route::resource('pages', PageController::class);
+        
+        // Contact requests routes
+        Route::patch('/contact-requests/{contactRequest}/mark-read', [ContactRequestController::class, 'markAsRead'])->name('contact-requests.mark-read');
+        Route::patch('/contact-requests/{contactRequest}/mark-unread', [ContactRequestController::class, 'markAsUnread'])->name('contact-requests.mark-unread');
+        Route::resource('contact-requests', ContactRequestController::class);
     });
 });
 

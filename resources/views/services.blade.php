@@ -60,36 +60,45 @@
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Service 1 -->
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                    </svg>
+            <div class="bg-gradient-to-br from-blue-50 to-yellow-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 border-l-4 border-blue-900 group animate-fade-in-up">
+                <div class="w-40 h-40 mx-auto mb-6 hover:scale-110 transition-transform duration-300 relative animate-bounce-slow">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-yellow-500 ring-offset-4 ring-offset-white group-hover:ring-blue-900 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop" alt="Education Counselling" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-4 ring-offset-white" style="display: none;">
+                        <span class="text-white text-4xl font-bold">EC</span>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Education Counselling</h3>
-                <p class="text-gray-600 leading-relaxed">Expert guidance to help you choose the right course and university that matches your career goals and interests.</p>
+                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors duration-300">Education Counselling</h3>
+                <p class="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">Expert guidance to help you choose the right course and university that matches your career goals and interests.</p>
             </div>
 
             <!-- Service 2 -->
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
+            <div class="bg-gradient-to-br from-yellow-50 to-blue-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 border-l-4 border-yellow-500 group animate-fade-in-up-delay">
+                <div class="w-40 h-40 mx-auto mb-6 hover:scale-110 transition-transform duration-300 relative animate-bounce-slow">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-yellow-500 ring-offset-4 ring-offset-white group-hover:ring-blue-900 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=400&fit=crop" alt="Admission Support" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-yellow-500 to-blue-900 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-4 ring-offset-white" style="display: none;">
+                        <span class="text-white text-4xl font-bold">AS</span>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Admission Support</h3>
-                <p class="text-gray-600 leading-relaxed">Complete assistance with application forms, document preparation, and submission to ensure successful admission.</p>
+                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors duration-300">Admission Support</h3>
+                <p class="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">Complete assistance with application forms, document preparation, and submission to ensure successful admission.</p>
             </div>
 
             <!-- Service 3 -->
-            <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-                <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center mb-6">
-                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                    </svg>
+            <div class="bg-gradient-to-br from-blue-50 to-yellow-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 border-l-4 border-blue-900 group animate-fade-in-up-delay">
+                <div class="w-40 h-40 mx-auto mb-6 hover:scale-110 transition-transform duration-300 relative animate-bounce-slow">
+                    <div class="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 ring-yellow-500 ring-offset-4 ring-offset-white group-hover:ring-blue-900 transition-all duration-500">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=400&fit=crop" alt="Visa Assistance" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" style="object-position: center;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    </div>
+                    <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-900 to-yellow-500 rounded-full flex items-center justify-center ring-4 ring-yellow-500 ring-offset-4 ring-offset-white" style="display: none;">
+                        <span class="text-white text-4xl font-bold">VA</span>
+                    </div>
                 </div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Visa Assistance</h3>
-                <p class="text-gray-600 leading-relaxed">Professional help with visa applications, documentation, and interview preparation for Australian student visas.</p>
+                <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors duration-300">Visa Assistance</h3>
+                <p class="text-gray-600 leading-relaxed group-hover:text-gray-800 transition-colors duration-300">Professional help with visa applications, documentation, and interview preparation for Australian student visas.</p>
             </div>
         </div>
     </div>
