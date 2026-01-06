@@ -54,12 +54,12 @@
                     <div class="relative rounded-3xl shadow-2xl overflow-hidden transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 animate-card-float group">
                         <!-- Main Beautiful Image -->
                         <div class="relative h-[500px] overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=800&h=600&fit=crop" 
                                  alt="Happy students studying together" 
                                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                 style="filter: blur(1.5px);"
+                                 style="filter: blur(1.5px) !important;"
                                  loading="eager"
-                                 onerror="this.onerror=null; this.src='https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800';">
+                                 onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop';">
                             <!-- Subtle Gradient Overlay -->
                             <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-yellow-500/20"></div>
                         </div>
