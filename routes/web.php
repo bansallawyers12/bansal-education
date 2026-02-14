@@ -23,6 +23,9 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
+// Redirect /emails to email app inbox
+Route::get('/emails', fn () => redirect()->route('emails.index'))->name('emails.redirect');
+
 // Email app (CRM-SES) at /email
 Route::prefix('email')->group(function () {
     Route::get('/', fn () => redirect()->route('dashboard'));
