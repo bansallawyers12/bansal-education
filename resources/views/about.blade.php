@@ -9,7 +9,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                About 
+                About5555
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                     Bansal Education Group
                 </span>
