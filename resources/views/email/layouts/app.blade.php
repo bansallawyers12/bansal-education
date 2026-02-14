@@ -24,8 +24,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <span class="font-semibold text-slate-100">CRM</span>
+                    <span class="font-semibold text-slate-100">Email</span>
                 </div>
+                <a href="{{ route('home') }}" class="ml-auto text-xs text-slate-400 hover:text-slate-200">← Back to site</a>
             </div>
             <nav class="flex-1 overflow-y-auto py-4 px-3">
                 <ul class="space-y-0.5">

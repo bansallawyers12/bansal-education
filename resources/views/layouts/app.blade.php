@@ -70,6 +70,7 @@
                         <a href="{{ route('courses') }}" class="{{ request()->routeIs('courses') ? 'text-navy border-b-2 border-gold' : 'text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold' }} px-3 py-2 text-sm font-medium transition-colors duration-200">Courses</a>
                         <a href="#" class="text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold px-3 py-2 text-sm font-medium transition-colors duration-200">Student Services</a>
                         <a href="#" class="text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold px-3 py-2 text-sm font-medium transition-colors duration-200">Success Stories</a>
+                        <a href="{{ url('/email') }}" class="{{ request()->is('email*') ? 'text-navy border-b-2 border-gold' : 'text-gray-700 hover:text-navy hover:border-b-2 hover:border-gold' }} px-3 py-2 text-sm font-medium transition-colors duration-200">Email</a>
                         <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'bg-gradient-to-r from-blue-900 to-yellow-500 text-white border-2 border-yellow-500' : 'bg-gradient-to-r from-blue-900 to-yellow-500 text-white hover:from-yellow-500 hover:to-blue-900 border-2 border-yellow-500 hover:border-blue-900' }} px-6 py-2.5 text-sm font-bold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 transform">Contact Us</a>
                     </div>
                 </div>
@@ -96,6 +97,7 @@
                 <a href="{{ route('courses') }}" class="{{ request()->routeIs('courses') ? 'bg-blue-50 text-navy' : 'text-gray-700 hover:text-navy hover:bg-gray-50' }} block px-3 py-2 text-base font-medium">Courses</a>
                 <a href="#" class="text-gray-700 hover:text-navy hover:bg-gray-50 block px-3 py-2 text-base font-medium">Student Services</a>
                 <a href="#" class="text-gray-700 hover:text-navy hover:bg-gray-50 block px-3 py-2 text-base font-medium">Success Stories</a>
+                <a href="{{ url('/email') }}" class="text-gray-700 hover:text-navy hover:bg-gray-50 block px-3 py-2 text-base font-medium">Email</a>
                 <a href="{{ route('contact') }}" class="{{ request()->routeIs('contact') ? 'bg-gradient-to-r from-blue-900 to-yellow-500 text-white border-2 border-yellow-500' : 'bg-gradient-to-r from-blue-900 to-yellow-500 text-white hover:from-yellow-500 hover:to-blue-900 border-2 border-yellow-500' }} block px-6 py-3 text-base font-bold rounded-lg shadow-lg text-center transition-all duration-300 hover:scale-105 transform">Contact Us</a>
             </div>
         </div>
@@ -146,6 +148,7 @@
                     <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="{{ route('about') }}" class="text-gray-300 hover:text-white transition-colors duration-200">About Us</a></li>
+                        <li><a href="{{ url('/email') }}" class="text-gray-300 hover:text-white transition-colors duration-200">Email</a></li>
                         <li><a href="{{ route('courses') }}" class="text-gray-300 hover:text-white transition-colors duration-200">Our Courses</a></li>
                         <li><a href="{{ route('contact') }}" class="text-gray-300 hover:text-white transition-colors duration-200">Contact</a></li>
                         <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-200">Admissions</a></li>

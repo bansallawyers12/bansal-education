@@ -53,6 +53,17 @@ return [
             'transport' => 'ses',
         ],
 
+        'sendgrid' => [
+            'transport' => 'smtp',
+            'host' => env('SENDGRID_SMTP_HOST', 'smtp.sendgrid.net'),
+            'port' => env('SENDGRID_SMTP_PORT', 587),
+            'encryption' => env('SENDGRID_SMTP_ENCRYPTION', 'tls'),
+            'username' => 'apikey',
+            'password' => env('SENDGRID_API_KEY'),
+            'timeout' => null,
+            'local_domain' => env('MAIL_EHLO_DOMAIN', parse_url((string) env('APP_URL', 'http://localhost'), PHP_URL_HOST)),
+        ],
+
         'postmark' => [
             'transport' => 'postmark',
             // 'message_stream_id' => env('POSTMARK_MESSAGE_STREAM_ID'),
